@@ -189,8 +189,8 @@ Avec le raccourci clavier **CTRL+W**, il suffit de saisir le nom du serveur qu�
 On passe à l’installation de la base. La deuxième ligne rajoute certains outils bien pratiques à avoir dès le départ. On peut ensuite s’attaquer à l’installation proprement dite.
 
 ```
-pacstrap /mnt base base-devel pacman-contrib
-pacstrap /mnt zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-release ntfs-3g exfat-utils bash-completion (sur une seule ligne !)
+pacstrap /mnt base base-devel pacman-contrib linux-firmware
+pacstrap /mnt zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-release ntfs-3g exfat-utils bash-completion tmux htop (sur une seule ligne !)
 ```
 
 Si on veut utiliser un noyau linux long terme, il faut rajouter à la deuxième ligne pacstrap le paquet linux-lts. Pour ntfs-3g, c’est utile si vous êtes amené à utiliser des disques formatés en ntfs. Si ce n’est pas le cas, vous pouvez l’ignorer allègrement.
